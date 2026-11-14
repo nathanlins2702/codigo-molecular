@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const linksMenu = document.querySelectorAll("#menu a");
 
-    const paginaAtual = window.location.pathname.split("/").pop();
+    const paginaAtual = window.location.pathname.split("/").pop() || "index.html";
 
     linksMenu.forEach(link => {
 
