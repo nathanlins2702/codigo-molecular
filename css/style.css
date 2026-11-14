@@ -40,7 +40,7 @@ body{
 }
 
 .banner{
-    background-image: url("/img/Logo\ CM\ em\ órbitas\ moleculares.png");
+    background-image: url("../img/Logo CM em órbitas moleculares.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -659,7 +659,7 @@ body{
 
     .Lipidios,
     .saude {
-        gap: 25x;
+        gap: 25px;
         padding: 40px 4%;
     }
 
@@ -1152,12 +1152,13 @@ body.escuro .botao-expandir {
     background-color: #e5f5fb;
     text-align: center;
     padding: 38px;
-    margin: 30px auto;
     border-radius: 12px;
     width: 90%;
     max-width: 600px;
-    top: 40%;
-    left: 28%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
