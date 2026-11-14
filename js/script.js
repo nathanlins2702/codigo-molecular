@@ -3,36 +3,36 @@ let lista = [
         nome: "Polímeros",
         categorias: ["meio-ambiente", "industria-tecnologia"],
         descricao: "Os polímeros são macromoléculas formadas pela união de moléculas menores, chamadas monômeros, que se repetem por meio de ligações químicas. Podem ser encontrados naturalmente ou produzidos artificialmente, estando presentes em diversos materiais e produtos do nosso cotidiano <br><br> Vamos conhecer mais sobre eles?",
-        imagem: "/img/polimeros.png",
-        link: "/polimeros.html"
+        imagem: "img/polimeros.png",
+        link: "polimeros.html"
     },
     {
         nome: "Lipídios",
         categorias: ["alimentacao", "saude"],
         descricao: "Os lipídios são moléculas orgânicas que não se dissolvem em água e desempenham funções importantes no organismo. Atuam como reserva de energia, isolamento térmico e composição das membranas celulares, estando presentes em diversos alimentos.<br><br> Vamos conhecer mais sobre eles?",
-        imagem: "/img/lipidio.png",
-        link: "/lipidios.html"
+        imagem: "img/lipidio.png",
+        link: "lipidios.html"
     },
     {
         nome: "Carboidratos",
         categorias: ["alimentacao", "saude", "meio-ambiente", "industria-tecnologia"],
         descricao: "Os carboidratos são moléculas orgânicas formadas por carbono, hidrogênio e oxigênio, que desempenham um papel importante no fornecimento de energia ao organismo. Estão presentes em alimentos como pães, frutas, massas e cereais. <br><br><br> Vamos conhecer mais sobre eles?",
-        imagem: "/img/carboidratos.png",
-        link: "/carboidratos.html"
+        imagem: "img/carboidratos.png",
+        link: "carboidratos.html"
     },
     {
         nome: "Proteínas",
         categorias: ["alimentacao", "saude"],
         descricao: "As proteínas são macromoléculas essenciais compostas por aminoácidos encadeados e arranjados de forma única. Elas são formadas basicamente por carbono, hidrogênio, oxigênio, nitrogênio e enxofre, contendo fósforo apenas raramente. <br><br> Vamos conhecer mais sobre elas?",
-        imagem: "/img/proteinas.png",
-        link: "/proteinas.html"
+        imagem: "img/proteinas.png",
+        link: "proteinas.html"
     },
     {
         nome: "Ácidos Nucleicos",
         categorias: ["saude"],
         descricao: "Os ácidos nucleicos são macromoléculas formadas pela união de nucleotídeos, representadas pelo DNA e pelo RNA. Sua principal função é armazenar, codificar e traduzir as informações genéticas que orientam a síntese de proteínas nos seres vivos. <br><br> Vamos conhecer mais sobre eles?",
-        imagem: "/img/acidos-nucleicos.png",
-        link: "/acidos-nucleicos.html"
+        imagem: "img/acidos-nucleicos.png",
+        link: "acidos-nucleicos.html"
     }
 ];
 
