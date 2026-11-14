@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Molecular</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <section>
+            <button id="botao-tema" aria-label="Ativar modo escuro"></button>
+            <button id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav id="menu">
+                <a href="index.html">Início</a>
+                <a href="polimeros.html">Polímeros</a>
+                <a href="lipidios.html">Lipídios</a>
+                <a href="carboidratos.html">Carboidratos</a>
+                <a href="proteinas.html">Proteínas</a>
+                <a href="acidos-nucleicos.html">Ácidos Nucleicos</a>
+                <a href="quiz-interativo.html">Quiz Interativo</a>
+            </nav>
+        </section>
+    </header>
+
+    <div class="quiz">
+        <h1>Quiz Interativo</h1>
+        <p>Teste seus conhecimentos sobre os diferentes tipos de moléculas!</p>
+    </div>
+
+    <div id="quizCard">
+        <h2 id="pergunta"></h2>
+        <div id="opcoes" class="quizOpcoes"></div>
+        <div class="controle">
+            <button id="perguntaAnterior" class="botaoControle">Pergunta Anterior</button>
+            <button id="proximaPergunta" class="botaoControle">Próxima Pergunta</button>
+        </div>
+    </div>
+
+    <div id="confirmacao" class="modalConfirmacao">
+        <h2>Confirmar respostas</h2>
+        <p>Tem certeza que deseja confirmar suas respostas?</p>
+        <div class="controle">
+            <button id="confirmarRespostas" class="botaoControle">Confirmar</button>
+            <button id="cancelarConfirmacao" class="botaoControle">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="resultadoCard" id="resultadoCard">
+        <h2>Resultado</h2>
+        <p id="resultado"></p>
+        <button id="reiniciarQuiz" class="botaoControle">Reiniciar Quiz</button>
+
+    </div>
+
+        
+    <footer id="contato">
+        <h3>Código Molecular</h3>
+
+        <p>📧 contato@cod.molecular.com</p>
+
+        <p>📞 (83) 99999-9999</p>
+
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 - Desenvolvido por Erick, Mª Letícia, Milena e Nathan. <br> 3º INFO M  
+        </p>
+    </footer>
+</body>

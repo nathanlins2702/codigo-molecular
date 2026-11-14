@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ácidos Nucleicos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <section>
+            <button id="botao-tema" aria-label="Ativar modo escuro"></button>
+            <button id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav id="menu">
+                <a href="index.html">Início</a>
+                <a href="polimeros.html">Polímeros</a>
+                <a href="lipidios.html">Lipídios</a>
+                <a href="carboidratos.html">Carboidratos</a>
+                <a href="proteinas.html">Proteínas</a>
+                <a href="/acidos-nucleicos.html">Ácidos Nucleicos</a>
+                <a href="quiz-interativo.html">Quiz Interativo</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="polimeros">
+        <button onclick="falarTexto()" class="botaoFala">Ouvir texto</button>
+        <div class="polimero-imagem">
+            <img src="/img/dna-rna.webp" alt="Representação do DNA e RNA" class="imagem-polimero">
+        </div>
+        
+        <div class="polimero-texto">
+            <h3 class="conteudo">O QUE SÃO?</h3>
+            <p class="conteudo">Ácidos nucleicos são moléculas responsáveis por armazenar e transmitir informações genéticas. 
+                Os dois principais tipos são o DNA (ácido desoxirribonucleico) e o RNA (ácido ribonucleico).</p>
+
+            <h3 class="conteudo">DIFERENÇAS ENTRE DNA E RNA:</h3>          
+            <p  class="conteudo">O <b><span style="color: #642b91">DNA</span></b> geralmente possui duas fitas, contém o açúcar 
+                desoxirribose e utiliza a base nitrogenada timina. Já o <b><span style="color: #642b91">RNA</span></b> geralmente 
+                possui uma fita, contém ribose e utiliza uracila no lugar da timina.</p>
+
+            <h3 class="conteudo">FUNÇÕES:</h3>
+            <p class="conteudo">O <b><span style="color: #642b91">DNA</span></b> armazena as informações genéticas que orientam o 
+                desenvolvimento e o funcionamento dos seres vivos. O <b><span style="color: #642b91">RNA</span></b> participa 
+                da utilização dessas informações, principalmente no processo de produção de proteínas.</p>
+        </div>
+    </section>
+
+    <section class="impacto">
+        <div class="polimero-img02">
+            <img src="/img/teste-dna.webp" alt="Análise de DNA em laboratório" class="impacto-ambiental">
+        </div>
+
+        <div class="polimero-texto">
+            <h3 class="conteudo">APLICAÇÃO NA CIÊNCIA E TECNOLOGIA:</h3>
+            <p  class="conteudo">Uma aplicação importante dos ácidos nucleicos é o <b><span style="color: #642b91">teste de identificação genética</span></b>, que utiliza amostras de DNA para comparar informações genéticas entre indivíduos. Essa tecnologia pode ser utilizada em testes de parentesco e em investigações forenses, auxiliando na identificação de pessoas.</p>
+
+            <h3 class="conteudo">EXEMPLO NO COTIDIANO:</h3>
+            <p class="conteudo">O DNA está presente nas células do nosso corpo e contém informações herdadas dos nossos pais. Por isso, características hereditárias, como a cor dos olhos, estão relacionadas às informações genéticas presentes no DNA.</p>
+        </div>
+
+    </section>
+        <section class="resumo-acidos">
+
+        <h2 class="conteudo">Ácidos nucleicos no cotidiano</h2>
+
+        <p class="conteudo">O DNA e o RNA são fundamentais para armazenar e utilizar
+            as informações genéticas dos seres vivos.
+        </p>
+
+        <div class="conteudo-extra">
+            <p class="conteudo">Os ácidos nucleicos são formados por unidades chamadas
+                nucleotídeos e possuem dois tipos principais: DNA e RNA.
+                O DNA armazena as informações genéticas, enquanto o RNA
+                participa da utilização dessas informações, principalmente
+                na produção de proteínas.
+            </p>
+
+            <p class="conteudo">Eles possuem aplicações importantes na ciência, como os
+                testes de identificação genética, utilizados para investigar
+                relações de parentesco e auxiliar na identificação de pessoas.
+                Além disso, o DNA está presente nas células do nosso corpo
+                e carrega características hereditárias transmitidas pelos pais.
+            </p>
+        </div>
+
+        <button class="botao-expandir" onclick="alternarTexto(this)">
+            Ver mais
+        </button>
+
+    </section>
+
+    <section class="curiosidade">
+        <h2 class="conteudo">Você sabia?</h2>
+        <p class="conteudo">As mitocôndrias, estruturas responsáveis por grande parte
+            da produção de energia das células, possuem seu próprio DNA,
+            chamado DNA mitocondrial. Nos seres humanos, esse material
+            genético é geralmente herdado da mãe.
+        </p>
+
+        <p class="fonte">
+            Fonte:
+            <a href="https://www.genome.gov/genetics-glossary/Mitochondrial-DNA"
+            target="_blank">
+                National Human Genome Research Institute (NHGRI)
+            </a>.
+        </p>
+    </section>
+    
+    <a href="acidos-nucleicos.html" class="voltar-topo">
+        ↑
+    </a>
+
+    <footer id="contato">
+
+        <h3>Código Molecular</h3>
+
+        <p>📧 contato@cod.molecular.com</p>
+
+        <p>📞 (83) 99999-9999</p>
+
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 - Projeto desenvolvido por Erick, Mª Letícia, Milena e Nathan. 
+        </p>
+
+    </footer>
+</body>
+</html>

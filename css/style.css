@@ -1,0 +1,1260 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alex+Brush&family=Archivo+Black&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IE:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Adamina", sans-serif;
+    background-color: #c8edf5;
+}
+
+.topo{
+    background-color: #8527d9;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 15px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    color: #4db6ac;
+}
+
+.banner{
+    background-image: url("/img/Logo\ CM\ em\ órbitas\ moleculares.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    padding: 50px 6%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner a{
+    text-decoration: none;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    color: #4db6ac;
+    padding: 20px;
+    width: 65%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.banner-content h1{
+    font-size: 48px;
+    color: #123B70;
+    margin-bottom: 15px;
+}
+
+.banner-content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(12, 80, 92);
+    text-align: justify;
+}
+
+.titulo{
+    animation: trocarDeCor 2s infinite;
+}
+
+.botao{
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: #01a8be;
+    color: #f5f5f2;
+    font-weight: bolder;
+    text-align: center;
+    animation: pulsar 2s infinite;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+#buscar {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#ordenar {
+    width: 180px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 10%;
+    margin-top: 2%;
+}
+
+.card {
+    background-color: #e5f5fb;
+    color: #171717;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden; 
+    padding: 15px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card h2 {
+    color: #8138f5;
+    font-weight: bold;
+    margin-top: 16px; 
+    margin-bottom: 10px; 
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    display: block;
+    overflow: hidden;
+    background-color: #8138f5;
+    border: none;
+    text-decoration: none;
+    margin: 15px auto 0 auto;
+    border-radius: 6px;
+    padding: 10px 16px; 
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    color: #f5f5f2;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.polimeros, .impacto {
+    background-color: #f1eafe; 
+    display: flex;             
+    align-items: flex-start;       
+    justify-content: center;    
+    gap: 40px;                
+    padding: 60px 5%;          
+    width: 100%;
+}
+
+.polimero-imagem{
+    flex: 0 0 45%;             
+    display: flex;
+    justify-content: center;   
+}
+
+.imagem-polimero {
+    max-width: 100%;           
+    height: auto;             
+    display: block;
+    border-radius: 15px;      
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s; 
+}
+
+.imagem-polimero:hover{
+    transform: scale(1.05);
+}
+
+.polimero-texto {
+    flex: 0 0 50%;             
+    color: #123B70;           
+    text-align: left;         
+    box-sizing: border-box;    
+}
+
+.polimero-texto h3 {
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    color: #6e024a;           
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.polimero-texto p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #231c27;
+    line-height: 1.6;
+    text-align: justify;       
+}
+
+.impacto .polimero-img02{
+    flex: 0 0 45%;             
+    display: flex;
+    justify-content: center;   
+}
+
+.impacto-ambiental {
+    max-width: 100%;           
+    height: auto;             
+    display: block;
+    border-radius: 15px;      
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s; 
+}
+
+.impacto-ambiental:hover{
+    transform: scale(1.05);
+}
+
+.voltar-topo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #01a8be;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    transition: .3s;
+    z-index: 999;
+}
+
+.voltar-topo:hover{
+    transform: scale(1.1);
+    background: #7b1fa2;
+}
+
+#contato{
+    background-color: #8527d9;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 5%;
+}
+
+#contato h3{
+    font-size: 40px;
+}
+
+#contato p{
+    margin: 10px 0;
+}
+
+.redes{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.redes a:hover{
+    color: rgb(112, 222, 255);
+}
+
+.copyright{
+    font-size: 14px;
+    opacity: .8;
+}
+
+@media (max-width: 1024px) {
+    #menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #menu a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 35px 4%;
+    }
+
+    .banner-content {
+        width: 75%;
+    }
+
+    .banner-content h1 {
+        font-size: 38px;
+    }
+
+    .banner-content p {
+        font-size: 17px;
+    }
+
+    #cartoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin: 30px auto;
+        padding: 0 25px;
+    }
+
+    #lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 20px;
+    }
+
+    .polimeros,
+    .impacto {
+        gap: 25px;
+        padding: 40px 4%;
+    }
+
+    .polimero-imagem,
+    .impacto .polimero-img02 {
+        flex: 0 0 45%;
+        min-width: 0;
+    }
+
+    .polimero-texto {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .polimero-texto p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topo {
+        padding: 12px;
+    }
+
+    #menu {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    #menu a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .banner {
+        min-height: 250px;
+        padding: 25px 15px;
+        align-items: center;
+        background-position: center;
+    }
+
+    .banner-content {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .banner-content p {
+        font-size: 15px;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .botao {
+        padding: 12px 18px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .filtros {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+
+    #buscar,
+    #ordenar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #cartoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .card {
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+        overflow-wrap: break-word;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .polimeros,
+    .impacto {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .polimero-imagem,
+    .polimero-texto,
+    .impacto .polimero-img02 {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .polimero-texto {
+        text-align: left;
+    }
+
+    .polimero-texto p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .imagem-polimero,
+    .impacto-ambiental {
+        width: 100%;
+        height: auto;
+    }
+
+    #contato {
+        padding: 30px 20px;
+    }
+
+    #contato h3 {
+        font-size: 30px;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .voltar-topo {
+        width: 45px;
+        height: 45px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 23px;
+    }
+}
+
+.Lipidios,
+.saude {
+    background-color: #f1eafe;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    width: 100%;
+}
+
+.Lipidio {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-lipidio {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.imagem-lipidio:hover {
+    transform: scale(1.03);
+}
+
+
+.lipidio-texto {
+    flex: 0 0 50%;
+    color: #123B70;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.lipidio-texto h4 {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #6e024a;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.lipidio-texto p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #231c27;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.saude {
+    padding: 2px 5% 60px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.lipidios-saude {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.saude-humana {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.saude-humana:hover {
+    transform: scale(1.03);
+}
+
+.proteinas {
+    background: #c8edf5;
+    padding: 15px 8%;
+    text-align: center;
+}
+
+.proteinas h1 {
+    color: #7138D9;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.proteinas p {
+    color: #44364F;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: auto;
+}
+
+.proteina-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(113, 56, 217, 0.12);
+    border-left: 5px solid #A45BEA;
+    transition: 0.3s;
+}
+
+.proteina-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(113, 56, 217, 0.2);
+}
+
+.proteina-card h2 {
+    color: #7138D9;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.proteina-card p {
+    color: #44364F;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.proteina-card img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+
+    .Lipidios,
+    .saude {
+        gap: 25x;
+        padding: 40px 4%;
+    }
+
+    .Lipidio,
+    .lipidios-saude {
+        flex: 0 0 45%;
+        min-width: 0;
+    }
+
+    .lipidio-texto {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .lipidio-texto p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Lipidios,
+    .saude {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 32px 22px;
+    }
+
+    .Lipidio,
+    .lipidio-texto,
+    .lipidios-saude {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .lipidio-texto {
+        text-align: left;
+    }
+
+    .lipidio-texto p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .imagem-lipidio,
+    .saude-humana {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.Carboidratos,
+.classificacao {
+    background-color: #f1eafe;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 46px;
+    padding: 60px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Carboidrato {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-carboidratos {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.imagem-carboidratos:hover {
+    transform: scale(1.03);
+}
+
+.carboidratos-texto {
+    flex: 0 0 50%;
+    color: #123B70;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.carboidratos-texto h4,
+.carboidratos-texto h5 {
+    font-size: 17px;
+    margin-top: 27px;
+    margin-bottom: 7px;
+    color: #6e024a;
+    font-weight: bold;
+}
+
+.carboidratos-texto h4:first-child {
+    margin-top: 0;
+}
+
+.carboidratos-texto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #231c27;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.classificacao {
+    padding: 4px 5% 60px;
+    gap: 40px;
+}
+
+.carboidratos-img {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.clasificacao-carb {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.clasificacao-carb:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 1024px) {
+
+    .Carboidratos,
+    .classificacao {
+        gap: 25px;
+        padding: 40px 4%;
+    }
+
+    .Carboidrato,
+    .carboidratos-img {
+        flex: 0 0 48%;
+        min-width: 0;
+    }
+
+    .carboidratos-texto {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .carboidratos-texto p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Carboidratos,
+    .classificacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .Carboidrato,
+    .carboidratos-img,
+    .carboidratos-texto {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .carboidratos-texto {
+        text-align: left;
+    }
+
+    .carboidratos-texto p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .imagem-carboidratos,
+    .clasificacao-carb {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.resumo-acidos {
+    background: white;
+    margin: 30px 1%;
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 6px solid #A45BEA;
+    box-shadow: 0 4px 15px rgba(113, 56, 217, 0.12);
+}
+
+.resumo-acidos h2 {
+    color: #7138D9;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.resumo-acidos p {
+    color: #44364F;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.conteudo-extra {
+    display: none;
+}
+
+.conteudo-extra.aberto {
+    display: block;
+}
+
+.botao-expandir {
+    background: #7138D9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.botao-expandir:hover {
+    background: #168FE5;
+}
+
+@media (max-width: 768px) {
+
+    .resumo-acidos {
+        margin: 20px 15px;
+        padding: 22px;
+    }
+
+    .resumo-acidos h2 {
+        font-size: 23px;
+    }
+
+    .resumo-acidos p {
+        font-size: 16px;
+    }
+
+}
+
+#menu a.ativo {
+    color: white;
+    background-color: #4db6ac;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.curiosidade {
+    background-color: #e8f5f3;
+    border-left: 5px solid #168b83;
+    margin: 30px 1%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.curiosidade h2 {
+    color: #168b83;
+    margin-bottom: 10px;
+}
+
+.curiosidade p {
+    line-height: 1.6;
+}
+
+.curiosidade .fonte {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+#botao-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .topo section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #botao-menu {
+        display: block;
+        margin: 10px 0 10px 10px;
+        align-self: flex-start;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #menu.aberto {
+        display: flex;
+    }
+
+    #menu a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#botao-tema {
+    border: none;
+    margin-bottom: 2%;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #168b83;
+}
+
+body.escuro {
+    background-color: #181818;
+    color: #eeeeee;
+}
+
+body.escuro .topo {
+    background-color: #222222;
+}
+
+body.escuro .polimeros,
+body.escuro .impacto,
+body.escuro .resumo-acidos,
+body.escuro .Carboidratos,
+body.escuro .classificacao,
+body.escuro .Lipidios,
+body.escuro .saude {
+    background-color: #292929;
+    color: #eeeeee;
+}
+
+body.escuro p,
+body.escuro h1,
+body.escuro h2,
+body.escuro h3,
+body.escuro h4,
+body.escuro h5 {
+    color: #eeeeee;
+}
+
+body.escuro .card {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+body.escuro #buscar,
+body.escuro #ordenar {
+    background-color: #333333;
+    color: white;
+}
+
+body.escuro footer {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+body.escuro a {
+    color: #80cbc4;
+}
+
+body.escuro .botao-expandir {
+    background-color: #59409a;
+    color: white;
+}
+
+.escuro .curiosidade{
+    background-color: #123B70;
+}
+
+.escuro .proteinas h1{
+    color: #171717;
+}
+
+.escuro .banner h1, 
+.escuro .banner p{
+    color: #171717;
+}
+
+.quiz {
+    text-align: center;
+}
+
+#quizCard {
+    background-color: #e5f5fb;
+    padding: 32px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.escuro #quizCard {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+
+.quizOpcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.botaoOpcao {
+    background-color: #25cec3;
+    color: white;
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.escuro .botaoOpcao {
+    background-color: #424242;
+    color: white;
+    border: 1px solid #fff8f8;
+}
+
+.botaoOpcao:hover {
+    background-color: #87c7f5;
+}
+
+.escuro .botaoOpcao:hover {
+    background-color: #777575;
+}
+
+.botaoOpcao.selecionada {
+    background-color: #168FE5;
+    font-weight: bold;
+}
+
+.controle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botaoControle {
+    background-color: #25cec3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.escuro .botaoControle {
+    background-color: #424242;
+    color: white;
+}
+
+.botaoControle:hover {
+   border: 1px solid #f3eded;
+}
+
+.modalConfirmacao {
+    position: fixed;
+    display: none;
+    background-color: #e5f5fb;
+    text-align: center;
+    padding: 38px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    top: 40%;
+    left: 28%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.escuro .modalConfirmacao {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+
+.resultadoCard {
+    display: none;
+    background-color: #e5f5fb;
+    text-align: center;
+    padding: 32px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.escuro .resultadoCard {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+.botaoFala {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #25cec3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.escuro .botaoFala {
+    background-color: #424242;
+    color: white;
+}
+
+.exemplos {
+   text-align: center;
+   margin: 30px auto;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.janelaSlider{
+    width: 600px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.imagensSlider {
+    display: flex;
+    transition: 0.5s ease ;
+}
+
+.imagensSlider img {
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover; 
+    flex-shrink: 0;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(0, 230, 118, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 230, 118, 0);
+    }
+}
+
+@keyframes trocarDeCor {
+    0% {
+        color: #25cec3;
+    }
+    50% {
+        color: #168FE5;
+    }
+    100% {
+        color: #25cec3;
+    }
+}
